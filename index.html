@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+
+    <!-- Reset css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid wide">
+          <div class="header-top">
+            <div class="header-top__logo">
+              <!-- Mobile side nav -->
+              <label
+                class="mobile-menu-checkbox-label"
+                for="mobile-menu-checkbox"
+              >
+                <i class="mobile-menu-icon fa-solid fa-bars"></i>
+              </label>
+              <input
+                type="checkbox"
+                name=""
+                id="mobile-menu-checkbox"
+                class="mobile-menu-checkbox"
+              />
+              <div class="side-nav-overlay"></div>
+              <nav class="side-nav-container">
+                <div class="side-nav__user-login">
+                  <img
+                    src="./assets/img/avatar-side-bar.png"
+                    alt=""
+                    class="side-nav__user-login-img"
+                  />
+                  <a href="" class="side-nav__user-login-btn">Sign in</a>
+                  <a href="" class="side-nav__user-login-btn">Register</a>
+                </div>
+
+                <ul class="side-nav__list">
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link"
+                      ><i class="side-nav__item-icon fa-solid fa-house"></i
+                      >Home</a
+                    >
+                  </li>
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link"
+                      ><i class="side-nav__item-icon fa-solid fa-list"></i
+                      >Categories</a
+                    >
+                  </li>
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link"
+                      ><i class="side-nav__item-icon fa-solid fa-heart"></i
+                      >Favourites</a
+                    >
+                  </li>
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link"
+                      ><i
+                        class="side-nav__item-icon fa-solid fa-cart-shopping"
+                      ></i
+                      >My orders</a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="side-nav__list">
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link"
+                      ><i
+                        class="side-nav__item-icon fa-solid fa-earth-americas"
+                      ></i
+                      >English | USD</a
+                    >
+                  </li>
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link"
+                      ><i class="side-nav__item-icon fa-solid fa-headphones"></i
+                      >Contact us</a
+                    >
+                  </li>
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link"
+                      ><i
+                        class="side-nav__item-icon fa-solid fa-address-card"
+                      ></i
+                      >About</a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="side-nav__list">
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link">User agreement</a>
+                  </li>
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link">Partnership</a>
+                  </li>
+                  <li class="side-nav__item">
+                    <a href="" class="side-nav__item-link">Privacy policy</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <a href="" class="header-top__logo-link">
+                <img
+                  src="./assets/img/logo-colored.png"
+                  alt=""
+                  class="header-top__logo-img"
+                />
+              </a>
+            </div>
+
+            <div class="header-top__search-bar">
+              <form action="" class="search-bar-form">
+                <input
+                  type="text"
+                  class="search-bar-form__input"
+                  placeholder="Search"
+                  name="search-keyword"
+                />
+                <select
+                  class="search-bar-form__input-select"
+                  name="search-sort"
+                  id=""
+                >
+                  <option
+                    class="search-bar-form__input-select-option"
+                    value="All category"
+                  >
+                    All category
+                  </option>
+                  <option
+                    class="search-bar-form__input-select-option"
+                    value="All category"
+                  >
+                    Smart phone
+                  </option>
+                  <option
+                    class="search-bar-form__input-select-option"
+                    value="All category"
+                  >
+                    Smart watch
+                  </option>
+                </select>
+                <button class="search-bar-form__submit-btn" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+
+            <ul class="header-top__user-menu-list">
+              <li class="header-top__user-menu-list-item">
+                <a href="" class="header-top__user-menu-list-item-link">
+                  <i
+                    class="header-top__user-menu-list-item-icon fa-solid fa-user"
+                  ></i
+                  ><span class="header-top__user-menu-list-item-title"
+                    >Profile</span
+                  >
+                </a>
+              </li>
+              <li class="header-top__user-menu-list-item">
+                <a href="" class="header-top__user-menu-list-item-link">
+                  <i
+                    class="header-top__user-menu-list-item-icon fa-solid fa-message"
+                  ></i
+                  ><span class="header-top__user-menu-list-item-title"
+                    >Message</span
+                  >
+                </a>
+              </li>
+              <li class="header-top__user-menu-list-item">
+                <a href="" class="header-top__user-menu-list-item-link">
+                  <i
+                    class="header-top__user-menu-list-item-icon fa-solid fa-heart"
+                  ></i
+                  ><span class="header-top__user-menu-list-item-title" an
+                    >Order</span
+                  >
+                </a>
+              </li>
+              <li class="header-top__user-menu-list-item">
+                <a href="" class="header-top__user-menu-list-item-link">
+                  <i
+                    class="header-top__user-menu-list-item-icon fa-solid fa-cart-shopping"
+                  ></i
+                  ><span class="header-top__user-menu-list-item-title"
+                    >My cart</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header-nav-wrap">
+          <div class="grid wide">
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__item-link">
+                    <i
+                      class="header-nav__item-icon-right-large fa-solid fa-bars"
+                    ></i
+                    >All category
+                  </a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__item-link">Hot offers</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__item-link">Gift boxes</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__item-link">Projects</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__item-link">Menu item</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="" class="header-nav__item-link"
+                    >Help<i
+                      class="header-nav__item-icon-left fa-solid fa-chevron-down"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  English, USD<i
+                    class="header-nav__item-icon-left fa-solid fa-chevron-down"
+                  ></i>
+                </li>
+                <li class="header-nav__item">
+                  Ship to<i
+                    class="header-nav__item-icon-left fa-solid fa-flag"
+                  ></i>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="main">
+        <div class="grid wide">
+          <!-- Section main -->
+          <section class="section-main">
+            <div class="row no-gutter">
+              <div class="col l-3 m-0 c-0">
+                <ul class="section-main__menu-list">
+                  <li
+                    class="section-main__menu-item section-main__menu-item--active"
+                  >
+                    <a href="" class="section-main__menu-item-link">
+                      Automobiles
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      Clothes and wear
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      Home interiors
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      Computer and tech
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      Tools, equipments
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      Sports and outdoor
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      Animal and pets
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      Machinary tools
+                    </a>
+                  </li>
+                  <li class="section-main__menu-item">
+                    <a href="" class="section-main__menu-item-link">
+                      More category
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col l-9 m-12 c-12">
+                <div class="row no-gutter full-height">
+                  <div class="col l-9 m-8 c-12">
+                    <div href="" class="section-main__banner-wrap">
+                      <span class="section-main__banner-title"
+                        >Lastest trending</span
+                      >
+                      <span class="section-main__banner-subtitle"
+                        >Electronic items</span
+                      >
+                      <a href="" class="section-main__banner-btn-link"
+                        >Learn more</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col l-3 m-4 c-0">
+                    <ul class="section-main__banner-list">
+                      <li class="section-main__banner-list-item">
+                        <div class="section-main__user-message-wrap">
+                          <img
+                            src="./assets/img/avatar.png"
+                            alt=""
+                            class="section-main__user-img"
+                          />
+                          <span class="section-main__user-message"
+                            >Hi, user let's get started</span
+                          >
+                        </div>
+                        <a
+                          href=""
+                          class="btn-primary section-main__user-join-btn-link"
+                          >Join now</a
+                        >
+                        <a
+                          href=""
+                          class="btn-secondary section-main__user-join-btn-link"
+                          >Sign in</a
+                        >
+                      </li>
+                      <li class="section-main__banner-list-item">
+                        <a href="" class="section-main__banner-list-item-link"
+                          >Get $10 off with a new supplier</a
+                        >
+                      </li>
+                      <li class="section-main__banner-list-item">
+                        <a href="" class="section-main__banner-list-item-link"
+                          >Send quotes with supplier preferences</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section sale -->
+          <section class="section-sale">
+            <div class="row no-gutter">
+              <div class="col l-3 m-12 c-12">
+                <div class="time-counter-wrap">
+                  <h3 class="time-counter__heading">Deals and offers</h3>
+                  <span class="time-counter__subtitle">Hygiene equipments</span>
+                  <ul class="time-counter__list">
+                    <li class="time-counter__item">
+                      <span class="time-counter__item-num">04</span>
+                      <span class="time-counter__item-label">Days</span>
+                    </li>
+                    <li class="time-counter__item">
+                      <span class="time-counter__item-num">13</span>
+                      <span class="time-counter__item-label">Hour</span>
+                    </li>
+                    <li class="time-counter__item">
+                      <span class="time-counter__item-num">34</span>
+                      <span class="time-counter__item-label">Min</span>
+                    </li>
+                    <li class="time-counter__item">
+                      <span class="time-counter__item-num">56</span>
+                      <span class="time-counter__item-label">Sec</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col l-9 m-12 c-12">
+                <div class="row no-gutter">
+                  <div
+                    class="col l-2-4 m-4 c-6 section-sale__sale-category-item"
+                  >
+                    <a href="" class="section-sale__sale-category-link">
+                      <img
+                        class="section-sale__sale-category-img"
+                        src="./assets/img/smart-watch.png"
+                        alt=""
+                      />
+                      <h3 class="section-sale__sale-category-title">
+                        Smart watches
+                      </h3>
+                      <span class="section-sale__sale-num">-25%</span>
+                    </a>
+                  </div>
+                  <div
+                    class="col l-2-4 m-4 c-6 section-sale__sale-category-item"
+                  >
+                    <a href="" class="section-sale__sale-category-link">
+                      <img
+                        class="section-sale__sale-category-img"
+                        src="./assets/img/laptop.png"
+                        alt=""
+                      />
+                      <h3 class="section-sale__sale-category-title">Laptops</h3>
+                      <span class="section-sale__sale-num">-15%</span>
+                    </a>
+                  </div>
+                  <div
+                    class="col l-2-4 m-4 c-6 section-sale__sale-category-item"
+                  >
+                    <a href="" class="section-sale__sale-category-link">
+                      <img
+                        class="section-sale__sale-category-img"
+                        src="./assets/img/camera.png"
+                        alt=""
+                      />
+                      <h3 class="section-sale__sale-category-title">
+                        GoPro cameras
+                      </h3>
+                      <span class="section-sale__sale-num">-45%</span>
+                    </a>
+                  </div>
+                  <div
+                    class="col l-2-4 m-4 c-6 section-sale__sale-category-item"
+                  >
+                    <a href="" class="section-sale__sale-category-link">
+                      <img
+                        class="section-sale__sale-category-img"
+                        src="./assets/img/head-phone.png"
+                        alt=""
+                      />
+                      <h3 class="section-sale__sale-category-title">
+                        Headphones
+                      </h3>
+                      <span class="section-sale__sale-num">-25%</span>
+                    </a>
+                  </div>
+                  <div
+                    class="col l-2-4 m-4 c-6 section-sale__sale-category-item"
+                  >
+                    <a href="" class="section-sale__sale-category-link">
+                      <img
+                        class="section-sale__sale-category-img"
+                        src="./assets/img/smart-phone.png"
+                        alt=""
+                      />
+                      <h3 class="section-sale__sale-category-title">
+                        Smart phones
+                      </h3>
+                      <span class="section-sale__sale-num">-10%</span>
+                    </a>
+                  </div>
+                  <div
+                    class="col l-2-4 m-4 c-6 section-sale__sale-category-item"
+                  >
+                    <a href="" class="section-sale__sale-category-link">
+                      <img
+                        class="section-sale__sale-category-img"
+                        src="./assets/img/smart-phone.png"
+                        alt=""
+                      />
+                      <h3 class="section-sale__sale-category-title">
+                        Smart phones
+                      </h3>
+                      <span class="section-sale__sale-num">-10%</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section product category -->
+          <div class="section-product-category-wrap">
+            <section class="section-product-category">
+              <div class="row no-gutter">
+                <div class="col l-3 m-12 c-12">
+                  <div class="section-product-category_aside full-height">
+                    <h3 class="section-product-category_aside-title">
+                      Home and outdoor
+                    </h3>
+                    <a href="" class="btn section-product-category_aside-link"
+                      >Source now</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col l-9 m-12 c-12">
+                  <div class="row no-gutter">
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Soft chairs</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/soft-chair.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Sofa & chair</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/sofa.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Chairs</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/chairs.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Ceramic</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/ceramic.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Kitchen mixers</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/kitchen-mixer.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Coffee maker</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/coffee-maker.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Home appliance</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/home-appliance.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Tree</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/tree.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-product-category">
+              <div class="row no-gutter">
+                <div class="col l-3 m-12 c-12">
+                  <div class="section-product-category_aside full-height">
+                    <h3 class="section-product-category_aside-title">
+                      Consumer electronics and gadgets
+                    </h3>
+                    <a href="" class="btn section-product-category_aside-link"
+                      >Source now</a
+                    >
+                  </div>
+                </div>
+
+                <div class="col l-9 m-12 c-12">
+                  <div class="row no-gutter">
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Smart watches</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/smart-watch.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Cameras</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/camera.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Headphones</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/head-phone.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Ceramic</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/ceramic.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Kitchen mixers</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/kitchen-mixer.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Laptops</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/laptop.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Smart phones</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/smart-phone.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="col l-3 m-4 c-6 section-product-category__item-wrap"
+                    >
+                      <a href="" class="section-product-category__item-link">
+                        <div
+                          class="section-product-category__category-name-wrap"
+                        >
+                          <span class="section-product-category__category-name"
+                            >Tree</span
+                          >
+                          <span class="section-product-category__category-price"
+                            >From <br />
+                            USD 19</span
+                          >
+                        </div>
+                        <img
+                          class="section-product-category__category-img"
+                          src="./assets/img/tree.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Section inquiry -->
+          <div class="section-inquiry">
+            <div class="row no-gutter">
+              <div class="col l-7 m-5 c-12">
+                <div class="section-inquiry-slogan">
+                  <h3 class="section-inquiry-slogan__title">
+                    An easy way to send requests to all suppliers
+                  </h3>
+                  <span class="section-inquiry-slogan__subtitle"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt.</span
+                  >
+                </div>
+              </div>
+              <div class="col l-5 m-7 c-12">
+                <form action="" class="section-inquiry-form">
+                  <span class="section-inquiry-form__heading"
+                    >Send quote to suppliers</span
+                  >
+                  <div class="section-inquiry-form__group">
+                    <label
+                      class="section-inquiry-form__label"
+                      for="detail-input"
+                      >What item you need?</label
+                    >
+                    <input
+                      type="text"
+                      name="details"
+                      class="section-inquiry-form__input"
+                      id="detail-input"
+                      placeholder="Type more details"
+                    />
+                  </div>
+                  <div class="section-inquiry-form__group">
+                    <label
+                      class="section-inquiry-form__label"
+                      for="select-quantity"
+                      >Quantity</label
+                    >
+                    <input
+                      type="number"
+                      name="quantity"
+                      class="section-inquiry-form__input"
+                      id="select-quantity"
+                      placeholder="Pcs"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn-primary section-inquiry-form__submit-btn"
+                  >
+                    Send inquiry
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section recommended items -->
+          <div class="section-recommended-items">
+            <h3 class="section-recommended-items__heading">
+              Recommended items
+            </h3>
+            <ul class="row sm-gutter section-recommended-items__list">
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/1.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$10.30</span>
+                  <span class="section-recommended-items__item-description"
+                    >T-shirts with multiple colors, for men</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/2.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$10.30</span>
+                  <span class="section-recommended-items__item-description"
+                    >Jeans short for men blue color</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/3.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$12.30</span>
+                  <span class="section-recommended-items__item-description"
+                    >Brown winter coat medium size</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/4.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$34.00</span>
+                  <span class="section-recommended-items__item-description"
+                    >Jeans bag for travel for men</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/5.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$99.00</span>
+                  <span class="section-recommended-items__item-description"
+                    >Leather wallet</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/6.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$9.99</span>
+                  <span class="section-recommended-items__item-description"
+                    >Canon camera black, 100x zoom</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/7.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$8.99</span>
+                  <span class="section-recommended-items__item-description"
+                    >Headset for gaming with mic</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/8.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$10.30</span>
+                  <span class="section-recommended-items__item-description"
+                    >Smartwatch silver color modern</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/9.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$10.30</span>
+                  <span class="section-recommended-items__item-description"
+                    >Blue wallet for men leather metarfial</span
+                  >
+                </a>
+              </li>
+              <li class="col l-2-4 m-4 c-6 section-recommended-items__item">
+                <a href="" class="section-recommended-items__item-link">
+                  <img
+                    src="/assets/img/recommend-items/10.png"
+                    alt=""
+                    class="section-recommended-items__item-img"
+                  />
+                  <span class="section-recommended-items__price">$80.95</span>
+                  <span class="section-recommended-items__item-description"
+                    >Jeans bag for travel for men</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Section services -->
+          <!-- <div class="section-services">
+            <h3 class="section-services__heading">Our extra services</h3>
+            <ul class="row sm-gutter section-services__list">
+              <li class="section-services__item">
+                <img src="" alt="" class="section-services__item-img" />
+                <span class="section-services__item-caption"
+                  >Source from Industry Hubs</span
+                >
+              </li>
+            </ul>
+          </div> -->
+
+          <!-- Section suppliers -->
+        </div>
+
+        <!-- Section subscribe -->
+        <div class="section-subscribe">
+          <h3 class="section-subscribe__heading">
+            Subscribe on our newsletter
+          </h3>
+          <span class="section-subscribe__subheading">
+            Get daily news on upcoming offers from many suppliers all over the
+            world
+          </span>
+          <div class="grid wide">
+            <form class="row no-gutter section-subscribe__form" action="">
+              <div class="col l-7 m-6 c-12">
+                <div class="section-subscribe__form-left">
+                  <div class="section-subscribe__input-wrap">
+                    <i
+                      class="section-subscribe__icon fa-regular fa-envelope"
+                    ></i>
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      name="subscribe-email"
+                      class="section-subscribe__input"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col l-5 m-6 c-12">
+                <div class="section-subscribe__form-right">
+                  <button
+                    class="section-subscribe__submit-btn btn-primary"
+                    type="submit"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-contact-wrap">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-3 m-12 c-12">
+                <div class="footer-contact">
+                  <a href="" class="footer-contact__logo-link">
+                    <img
+                      class="footer-contact__logo-img"
+                      src="./assets/img/logo-colored.png"
+                      alt=""
+                    />
+                  </a>
+                  <span class="footer-contact__message"
+                    >Best information about the company you can find it here but
+                    now lorem ipsum is</span
+                  >
+                  <ul class="footer-contact__apps-list">
+                    <li class="footer-contact__apps-list-item">
+                      <a href="" class="footer-contact__app-list-items-link">
+                        <i
+                          class="footer-contact__app-list-items-icon fa-brands fa-facebook"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="footer-contact__apps-list-item">
+                      <a href="" class="footer-contact__app-list-items-link">
+                        <i
+                          class="footer-contact__app-list-items-icon fa-brands fa-twitter"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="footer-contact__apps-list-item">
+                      <a href="" class="footer-contact__app-list-items-link">
+                        <i
+                          class="footer-contact__app-list-items-icon fa-brands fa-linkedin"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="footer-contact__apps-list-item">
+                      <a href="" class="footer-contact__app-list-items-link">
+                        <i
+                          class="footer-contact__app-list-items-icon fa-brands fa-instagram"
+                        ></i>
+                      </a>
+                    </li>
+                    <li class="footer-contact__apps-list-item">
+                      <a href="" class="footer-contact__app-list-items-link">
+                        <i
+                          class="footer-contact__app-list-items-icon fa-brands fa-youtube"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col l-9 m-12 c-12">
+                <div class="row">
+                  <div class="col l-2-4 m-4 c-6">
+                    <div class="footer__heading">About</div>
+                    <ul class="footer__list">
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">About us</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Find store</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Categories</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Blogs</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <div class="footer__heading">Partnership</div>
+                    <ul class="footer__list">
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Shopee</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Tiki</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Lazada</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Tmall</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <div class="footer__heading">Information</div>
+                    <ul class="footer__list">
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Help Center</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Money Refund</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Shipping</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <div class="footer__heading">For user</div>
+                    <ul class="footer__list">
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Login</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Register</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">Settings</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="" class="footer__item-link">My Orders</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col l-2-4 m-4 c-12">
+                    <div class="footer__heading">Get app</div>
+                    <ul class="footer__app-download-list">
+                      <li class="footer__app-download-item">
+                        <a href="" class="footer__app-download-link"
+                          ><img
+                            src="./assets/img/appstore.png"
+                            alt=""
+                            class="footer__app-download-img"
+                        /></a>
+                      </li>
+                      <li class="footer__app-download-item">
+                        <a href="" class="footer__app-download-link"
+                          ><img
+                            src="./assets/img/googleplay.png"
+                            alt=""
+                            class="footer__app-download-img"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright-wrap">
+          <div class="grid wide">
+            <div class="footer-copyright">
+              <span class="footer-copyright__label">© 2023 Ecommerce</span>
+              <div class="footer-copyright__language">
+                English<i
+                  class="footer-copyright__language-icon fa-solid fa-chevron-up"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var mobileMenuCheck = document.getElementsByClassName(
+        "mobile-menu-checkbox"
+      )[0];
+      var sideNavContainer =
+        document.getElementsByClassName("side-nav-container")[0];
+      var sideNavOverlay =
+        document.getElementsByClassName("side-nav-overlay")[0];
+
+      sideNavOverlay.onclick = function (e) {
+        mobileMenuCheck.checked = !mobileMenuCheck.checked;
+      };
+    </script>
+  </body>
+</html>

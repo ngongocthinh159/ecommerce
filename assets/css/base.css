@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #0d6efd;
+  --gray-500-color: #8b96a5;
+  --gray-600-color: #909499;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #1c1c1c;
+  --background-color: #f7fafc;
+
+  --header-top-height: 86px;
+  --header-nav-height: 56px;
+  --header-height: calc(var(--header-top-height) + var(--header-nav-height));
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.btn {
+  padding: 8px 16px;
+  text-align: center;
+  color: var(--text-color);
+  background: var(--white-color);
+  font-size: 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  text-align: center;
+  color: var(--white-color);
+  background: var(--primary-color);
+  font-size: 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  padding: 8px 16px;
+  text-align: center;
+  color: var(--primary-color);
+  background: var(--white-color);
+  font-size: 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+}
