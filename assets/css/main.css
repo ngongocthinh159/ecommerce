@@ -111,7 +111,7 @@
 }
 
 .header-top__user-menu-list-item-link {
-  text-decoration: 0;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
